@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CHILL</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="header">
+    <div class="header-title">
+      CHILL
+    </div>
+  </div>
+  <div class="sticky-block">
+    <div class="header-text">
+      <div class="header-transition">
+        <ul class="header-position">
+          <li class="header-transition-text">
+            <a href="index.html">ГЛАВНАЯ</a>
+          </li>
+          <li class="header-transition-text">
+            <a href="menu.html">МЕНЮ</a>
+          </li>
+          <li class="header-transition-text">
+            <a href="info.html">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-reservation">
+        <div class="header-btn">
+          <a class="header-button" id="myBtn" href="#">ЗАБРОНИРОВАТЬ</a>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+      
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-img">
+              <span class="close">&times;</span>
+            </div>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="modal-title">
+              Забронировать столик
+            </div>
+
+            <div class="modal-subtitle">
+              Забронируйте стол заранее <br>
+              и гарантируйте себе отличный вечер. <br>
+              После получения заявки, с вами свяжется менеджер по телефону, указанному в строке.
+            </div>
+
+            <form method="post" class="form">
+              <div class="form-group">
+                <input name="name" class="form-input1" placeholder=" " required>
+                <label class="form-label">Ваше имя</label>
+              </div>
+              <div class="form-group">
+                <input name="phone" class="form-input1 phone" placeholder=" " required>
+                <label class="form-label">Ваш номер телефона</label>
+              </div>
+              <div class="form-group">
+                <input name="email" class="form-input1" placeholder=" " required>
+                <label class="form-label">Ваш email</label>
+              </div>
+            
+              <input name="calendary" class="calendary" type="date" name="Date" id="davaToday" required>
+              <br><br><br>
+            
+            
+            
+              <button class="form-button">Забронировать</button>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+      
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <div class="greeting">
+    <div class="greeting-text">
+      <b>Приветствуем в нашем ресторане</b>
+    </div>
+  </div>
+  <div class="history">
+    <div class="history-flex">
+      <div class="history-image">
+        <img class="history-img" src="history-image.png">
+      </div>
+      <div class="history-content">
+        <div class="history-title">
+          <span>Ресторан</span> CHILL
+        </div>
+        <div class="history-text">
+          Цель нашего ресторана, это дать
+          нашим посетителям почувствовать
+          свою принадлежность к высшим
+          слоям общества. Интерьер
+          нашего ресторана выполнен в
+          темных тонах, чтобы подчеркнуть
+          стильность заведения.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reccomendfood">
+    <div class="rec-title">
+      Наши рекомендации
+    </div>
+    <div class="rec-content">
+      <div class="rec-flex">
+        <div class="rec-img">
+          <img class="content-image" src="rec-img1.png">
+        </div>
+
+        <div class="rec-text">
+          <div class="rec-text-title">
+            Шницель
+          </div>
+          <div class="rec-text-text">
+            Шницель из индейки <br>
+            с брусничным соусом
+          </div>
+        </div>
+
+        <div class="rec-img">
+          <img class="content-image" src="rec-img3.png">
+        </div>
+
+        <div class="rec-text">
+          <div class="rec-text-title">
+            Борщ
+          </div>
+          <div class="rec-text-text">
+            Борщ и popover <br>
+            (воздушная булочка)
+          </div>
+        </div>
+
+        <div class="rec-img">
+          <img class="content-image" src="rec-img5.png">
+        </div>
+      </div>
+
+      <div class="rec-flex">
+        <div class="rec-text">
+          <div class="rec-text-title">
+            Ролл <br> Мечта
+          </div>
+          <div class="rec-text-text">
+            Нори, угорь, краб, авокадо, сыр <br> Филадельфия, икра Тобико <br> красная, соус спайси
+          </div>
+        </div>
+
+        <div class="rec-img">
+          <img class="content-image" src="rec-img2.png">
+        </div>
+
+        <div class="rec-text">
+          <div class="rec-text-title1">
+            Тартар из <br> красного тунца
+          </div>
+          <div class="rec-text-text">
+            Свежий тунец, киви, авокадо, <br>зелёный лук, оливковое масло, <br> соус медово-горчичная <br> заправка, соевый соус, васаби. <br>
+            Украшается Черри, руколой и <br> икрой тобико, кедровыми <br> орехами, гренками из белого <br> хлеба
+          </div>
+        </div>
+
+        <div class="rec-img">
+          <img class="content-image" src="rec-img4.png">
+        </div>
+
+        <div class="rec-text">
+          <div class="rec-text-title1">
+            Спагетти с кальмаром <br>
+            и креветками
+          </div>
+          <div class="rec-text-text">
+            Креветки, спагетти, кальмар, <br> лук, черри, зелень, чеснок
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-up">
+      <div class="footer-block">
+        <div class="footer-logo">
+          CHILL
+        </div>
+
+        <hr size="1px" color=#D3C8C8>
+
+        <div class="footer-info">
+          <div class="footer-address">
+            Адрес <br><br>
+            к1627, Зеленоград <br>
+            График работы: с 8:00 до 22:00
+          </div>
+
+          <div class="footer-contacts">
+            Контакты <br><br>
+            +7 963 679 28 59<br>
+            yejik2020@gmail.com
+          </div>
+        </div>
+
+        <hr size="1px" color=#D3C8C8>
+
+        <div class="footer-copyright">
+          <div class="footer-copyright-text">
+            ©2022 Restourant CHILL
+          </div>
+
+          <div class="footer-copyright-img">
+            <a href="https://vk.com/argear" target="_blank"><img class="footer-copyright-image" src="footer-vk.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-down">
+      <div class="footer-down-text">
+        Все права защищены
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="scripts.js"></script>
+  <script>document.getElementById('datePicker').valueAsDate = new Date();</script>
+
+</body>
+</html>
